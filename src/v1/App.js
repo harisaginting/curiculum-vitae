@@ -14,11 +14,11 @@ function App() {
   const store = createStore(model);
   return (
     <StoreProvider store={store}>
-      <Router>
+      <Router  basename={`${process.env.PUBLIC_URL}/`} >
             <Switch>
               <Route Route exact path="/" component={HomePage} />
             </Switch>
-          </Router>
+      </Router>
     </StoreProvider>
   );
 }
