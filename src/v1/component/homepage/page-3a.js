@@ -25,7 +25,7 @@ function Page3(props) {
 					  <li className="list-group-item">
 					  	<div className="row">
 					  		<div className="image-stack-container">
-					  				<img src={'../php.png'} className="avatar-stack"/>
+					  				<img src={`${process.env.PUBLIC_URL}/`+'php.png'} className="avatar-stack"/>
 					  		</div>
 					  		<div className="stack-container">
 					  			<div className="stack-title">PHP</div>
@@ -47,7 +47,7 @@ function Page3(props) {
 					  <li className="list-group-item">
 					  	<div className="row">
 					  		<div className="image-stack-container">
-					  				<img src={'../golang.png'} className="avatar-stack"/>
+					  				<img src={`${process.env.PUBLIC_URL}/`+'golang.png'} className="avatar-stack"/>
 					  		</div>
 					  		<div className="stack-container">
 					  			<div className="stack-title">GoLang</div>
@@ -69,7 +69,7 @@ function Page3(props) {
 					  <li className="list-group-item">
 					  	<div className="row">
 					  		<div className="image-stack-container">
-					  				<img src={'../javascript.png'} className="avatar-stack" style={{borderRadius:'50%'}} />
+					  				<img src={`${process.env.PUBLIC_URL}/`+'javascript.png'} className="avatar-stack" style={{borderRadius:'50%'}} />
 					  		</div>
 					  		<div className="stack-container">
 					  			<div className="stack-title">Javascript</div>
@@ -91,7 +91,7 @@ function Page3(props) {
 					  <li className="list-group-item">
 					  	<div className="row">
 					  		<div className="image-stack-container">
-					  				<img src={'../mysql.png'} className="avatar-stack" style={{borderRadius:'50%'}} />
+					  				<img src={`${process.env.PUBLIC_URL}/`+'mysql.png'} className="avatar-stack" style={{borderRadius:'50%'}} />
 					  		</div>
 					  		<div className="stack-container">
 					  			<div className="stack-title">mySql</div>
@@ -113,7 +113,7 @@ function Page3(props) {
 					  <li className="list-group-item">
 					  	<div className="row">
 					  		<div className="image-stack-container">
-					  				<img src={'../oracle.jpg'} className="avatar-stack" style={{borderRadius:'50%'}} />
+					  				<img src={`${process.env.PUBLIC_URL}/`+'oracle.jpg'} className="avatar-stack" style={{borderRadius:'50%'}} />
 					  		</div>
 					  		<div className="stack-container">
 					  			<div className="stack-title">Oracle</div>
@@ -139,7 +139,7 @@ function Page3(props) {
 					  <li className="list-group-item">
 					  	<div className="row">
 					  		<div className="image-stack-container">
-					  				<img src={'../codeigniter.png'} className="avatar-stack"/>
+					  				<img src={`${process.env.PUBLIC_URL}/`+'codeigniter.png'} className="avatar-stack"/>
 					  		</div>
 					  		<div className="stack-container">
 					  			<div className="stack-title">Codeigniter</div>
@@ -161,7 +161,7 @@ function Page3(props) {
 					  <li className="list-group-item">
 					  	<div className="row">
 					  		<div className="image-stack-container">
-					  				<img src={'../laravel.png'} className="avatar-stack"/>
+					  				<img src={`${process.env.PUBLIC_URL}/`+'laravel.png'} className="avatar-stack"/>
 					  		</div>
 					  		<div className="stack-container">
 					  			<div className="stack-title">Laravel</div>
@@ -183,7 +183,7 @@ function Page3(props) {
 					  <li className="list-group-item">
 					  	<div className="row">
 					  		<div className="image-stack-container">
-					  				<img src={'../php.png'} className="avatar-stack" style={{borderRadius:'50%'}} />
+					  				<img src={`${process.env.PUBLIC_URL}/`+'php.png'} className="avatar-stack" style={{borderRadius:'50%'}} />
 					  		</div>
 					  		<div className="stack-container">
 					  			<div className="stack-title">GIN</div>
@@ -205,7 +205,7 @@ function Page3(props) {
 					  <li className="list-group-item">
 					  	<div className="row">
 					  		<div className="image-stack-container">
-					  				<img src={'../reactjs.png'} className="avatar-stack" style={{borderRadius:'50%'}} />
+					  				<img src={`${process.env.PUBLIC_URL}/`+'reactjs.png'} className="avatar-stack" style={{borderRadius:'50%'}} />
 					  		</div>
 					  		<div className="stack-container">
 					  			<div className="stack-title">ReactJs</div>
@@ -227,7 +227,7 @@ function Page3(props) {
 					  <li className="list-group-item">
 					  	<div className="row">
 					  		<div className="image-stack-container">
-					  				<img src={'../php.png'} className="avatar-stack" style={{borderRadius:'50%'}} />
+					  				<img src={`${process.env.PUBLIC_URL}/`+'php.png'} className="avatar-stack" style={{borderRadius:'50%'}} />
 					  		</div>
 					  		<div className="stack-container">
 					  			<div className="stack-title">Jquery</div>
@@ -260,7 +260,7 @@ function Page3(props) {
 					  <li className="list-group-item">
 					  	<div className="row">
 					  		<div className="image-stack-container">
-					  				<img src={'../php.png'} className="avatar-stack"/>
+					  				<img src={`${process.env.PUBLIC_URL}/`+'php.png'} className="avatar-stack"/>
 					  		</div>
 					  		<div className="stack-container">
 					  			<div className="stack-title mt-2 pt-3">Git</div>
@@ -274,7 +274,7 @@ function Page3(props) {
 					  <li className="list-group-item">
 					  	<div className="row">
 					  		<div className="image-stack-container">
-					  				<img src={'../php.png'} className="avatar-stack"/>
+					  				<img src={`${process.env.PUBLIC_URL}/`+'php.png'} className="avatar-stack"/>
 					  		</div>
 					  		<div className="stack-container">
 					  			<div className="stack-title mt-2 pt-3">Ubuntu</div>
@@ -288,7 +288,7 @@ function Page3(props) {
 					  <li className="list-group-item">
 					  	<div className="row">
 					  		<div className="image-stack-container">
-					  				<img src={'../php.png'} className="avatar-stack"/>
+					  				<img src={`${process.env.PUBLIC_URL}/`+'php.png'} className="avatar-stack"/>
 					  		</div>
 					  		<div className="stack-container">
 					  			<div className="stack-title mt-2 pt-3">Sublime</div>
@@ -302,7 +302,7 @@ function Page3(props) {
 					  <li className="list-group-item">
 					  	<div className="row">
 					  		<div className="image-stack-container">
-					  				<img src={'../php.png'} className="avatar-stack"/>
+					  				<img src={`${process.env.PUBLIC_URL}/`+'php.png'} className="avatar-stack"/>
 					  		</div>
 					  		<div className="stack-container">
 					  			<div className="stack-title mt-2 pt-3">Photoshop</div>
@@ -320,7 +320,7 @@ function Page3(props) {
 					  <li className="list-group-item">
 					  	<div className="row">
 					  		<div className="image-stack-container">
-					  				<img src={'../php.png'} className="avatar-stack"/>
+					  				<img src={`${process.env.PUBLIC_URL}/`+'php.png'} className="avatar-stack"/>
 					  		</div>
 					  	</div>
 					  </li>
@@ -331,7 +331,7 @@ function Page3(props) {
 					  <li className="list-group-item">
 					  	<div className="row">
 					  		<div className="image-stack-container">
-					  				<img src={'../php.png'} className="avatar-stack"/>
+					  				<img src={`${process.env.PUBLIC_URL}/`+'php.png'} className="avatar-stack"/>
 					  		</div>
 					  	</div>
 					  </li>
@@ -342,7 +342,7 @@ function Page3(props) {
 					  <li className="list-group-item">
 					  	<div className="row">
 					  		<div className="image-stack-container">
-					  				<img src={'../php.png'} className="avatar-stack"/>
+					  				<img src={`${process.env.PUBLIC_URL}/`+'php.png'} className="avatar-stack"/>
 					  		</div>
 					  	</div>
 					  </li>
@@ -353,7 +353,7 @@ function Page3(props) {
 					  <li className="list-group-item">
 					  	<div className="row">
 					  		<div className="image-stack-container">
-					  				<img src={'../php.png'} className="avatar-stack"/>
+					  				<img src={`${process.env.PUBLIC_URL}/`+'php.png'} className="avatar-stack"/>
 					  		</div>
 					  	</div>
 					  </li>
@@ -370,7 +370,7 @@ function Page3(props) {
 					  <li className="list-group-item">
 					  	<div className="row">
 					  		<div className="image-stack-container">
-					  				<img src={'../php.png'} className="avatar-stack"/>
+					  				<img src={`${process.env.PUBLIC_URL}/`+'php.png'} className="avatar-stack"/>
 					  		</div>
 					  		<div className="stack-container">
 					  			<div className="stack-title mt-2 pt-3">Friendly</div>
@@ -384,7 +384,7 @@ function Page3(props) {
 					  <li className="list-group-item">
 					  	<div className="row">
 					  		<div className="image-stack-container">
-					  				<img src={'../php.png'} className="avatar-stack"/>
+					  				<img src={`${process.env.PUBLIC_URL}/`+'php.png'} className="avatar-stack"/>
 					  		</div>
 					  		<div className="stack-container">
 					  			<div className="stack-title mt-2 pt-3">Team Player</div>
@@ -398,7 +398,7 @@ function Page3(props) {
 					  <li className="list-group-item">
 					  	<div className="row">
 					  		<div className="image-stack-container">
-					  				<img src={'../php.png'} className="avatar-stack"/>
+					  				<img src={`${process.env.PUBLIC_URL}/`+'php.png'} className="avatar-stack"/>
 					  		</div>
 					  		<div className="stack-container">
 					  			<div className="stack-title mt-2 pt-3">Positive Vibes</div>
