@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/curiculum-vitae/static/css/main.9eb5eafb.chunk.css",
-    "main.js": "/curiculum-vitae/static/js/main.918000d6.chunk.js",
-    "main.js.map": "/curiculum-vitae/static/js/main.918000d6.chunk.js.map",
-    "runtime-main.js": "/curiculum-vitae/static/js/runtime-main.fef9ec8e.js",
-    "runtime-main.js.map": "/curiculum-vitae/static/js/runtime-main.fef9ec8e.js.map",
-    "static/css/2.ac1ab58b.chunk.css": "/curiculum-vitae/static/css/2.ac1ab58b.chunk.css",
-    "static/js/2.5c29d68b.chunk.js": "/curiculum-vitae/static/js/2.5c29d68b.chunk.js",
-    "static/js/2.5c29d68b.chunk.js.map": "/curiculum-vitae/static/js/2.5c29d68b.chunk.js.map",
-    "index.html": "/curiculum-vitae/index.html",
-    "precache-manifest.6dd7bfdfea631ac710956f1f5b6b37f4.js": "/curiculum-vitae/precache-manifest.6dd7bfdfea631ac710956f1f5b6b37f4.js",
-    "service-worker.js": "/curiculum-vitae/service-worker.js",
-    "static/css/2.ac1ab58b.chunk.css.map": "/curiculum-vitae/static/css/2.ac1ab58b.chunk.css.map",
-    "static/css/main.9eb5eafb.chunk.css.map": "/curiculum-vitae/static/css/main.9eb5eafb.chunk.css.map",
-    "static/js/2.5c29d68b.chunk.js.LICENSE.txt": "/curiculum-vitae/static/js/2.5c29d68b.chunk.js.LICENSE.txt"
+    "main.css": "/resume/static/css/main.9eb5eafb.chunk.css",
+    "main.js": "/resume/static/js/main.76732a09.chunk.js",
+    "main.js.map": "/resume/static/js/main.76732a09.chunk.js.map",
+    "runtime-main.js": "/resume/static/js/runtime-main.a51bf362.js",
+    "runtime-main.js.map": "/resume/static/js/runtime-main.a51bf362.js.map",
+    "static/css/2.ac1ab58b.chunk.css": "/resume/static/css/2.ac1ab58b.chunk.css",
+    "static/js/2.5c29d68b.chunk.js": "/resume/static/js/2.5c29d68b.chunk.js",
+    "static/js/2.5c29d68b.chunk.js.map": "/resume/static/js/2.5c29d68b.chunk.js.map",
+    "index.html": "/resume/index.html",
+    "precache-manifest.466a94e2c49aaad7ea7f5895722b0b52.js": "/resume/precache-manifest.466a94e2c49aaad7ea7f5895722b0b52.js",
+    "service-worker.js": "/resume/service-worker.js",
+    "static/css/2.ac1ab58b.chunk.css.map": "/resume/static/css/2.ac1ab58b.chunk.css.map",
+    "static/css/main.9eb5eafb.chunk.css.map": "/resume/static/css/main.9eb5eafb.chunk.css.map",
+    "static/js/2.5c29d68b.chunk.js.LICENSE.txt": "/resume/static/js/2.5c29d68b.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.fef9ec8e.js",
+    "static/js/runtime-main.a51bf362.js",
     "static/css/2.ac1ab58b.chunk.css",
     "static/js/2.5c29d68b.chunk.js",
     "static/css/main.9eb5eafb.chunk.css",
-    "static/js/main.918000d6.chunk.js"
+    "static/js/main.76732a09.chunk.js"
   ]
 }
