@@ -292,6 +292,17 @@ body{
 }
 /*end page 4*/
 
+/*Page 5*/
+.page5 {
+  top: 10px;
+  position: absolute;
+  height: 60%;
+  width: 100%;
+  overflow: hidden;
+  user-select: none;
+}
+/*End Page 5*/
+
 .backgroundSore{
 	background: rgb(244,148,120);
 	background: linear-gradient(180deg, rgba(244,148,120,1) 13%, rgba(248,196,92,1) 30%, rgba(224,209,40,1) 64%, rgba(135,188,222,1) 88%);

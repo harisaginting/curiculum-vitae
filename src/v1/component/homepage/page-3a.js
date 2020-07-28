@@ -387,7 +387,7 @@ function Page3(props) {
 					  				<img src={'../php.png'} className="avatar-stack"/>
 					  		</div>
 					  		<div className="stack-container">
-					  			<div className="stack-title mt-2 pt-3">Hard Worker</div>
+					  			<div className="stack-title mt-2 pt-3">Team Player</div>
 					  		</div>
 					  	</div>
 					  </li>

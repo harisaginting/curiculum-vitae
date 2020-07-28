@@ -8,6 +8,7 @@ import Page1 from '../component/homepage/page-1';
 import Page2 from '../component/homepage/page-2';
 import Page3 from '../component/homepage/page-3a';
 import Page4 from '../component/homepage/page-4';
+import Page5 from '../component/homepage/page-5';
 
 
 const Homepage = (props) => {
@@ -17,6 +18,7 @@ const Homepage = (props) => {
 		const [page2, setPage2]   		= useState(false);
 		const [page3, setPage3]   		= useState(false);
 		const [page4, setPage4]   		= useState(false);
+		const [page5, setPage5]   		= useState(false);
 		const [page1Opacitiy, setPage1Opacitiy]   		= useState(false);
 
 		const goToPage = (i) =>{
@@ -40,7 +42,7 @@ const Homepage = (props) => {
 	    	setPage4(isVisible);
 	    }
 	    const page5Visibility = (isVisible) =>{
-	    	setPage4(isVisible);
+	    	setPage5(isVisible);
 	    }
 
 		useEffect(() => {
@@ -101,13 +103,15 @@ const Homepage = (props) => {
 
 			        <VisibilitySensor partialVisibility={true} containmentX={document.getElementById("container-parallax")} onChange={(isVisible)=> page4Visibility(isVisible)} >
 			        <ParallaxLayer className="page4" factor={3} offset={2.8}>
-			          <Page4 visibility={page3} style={{overflow:'scroll'}} />
+			          <Page4 visibility={page4} style={{overflow:'scroll'}} />
 			        </ParallaxLayer>
 			        </VisibilitySensor>
 
-			        <ParallaxLayer offset={6} speed={-0} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}
-			          >
-			        </ParallaxLayer>
+			         <VisibilitySensor partialVisibility={true} containmentX={document.getElementById("container-parallax")} onChange={(isVisible)=> page5Visibility(isVisible)} >
+				        <ParallaxLayer offset={6} factor={2} className="page5" >
+				          <Page5 visibility={page5}/>
+				        </ParallaxLayer>
+				     </VisibilitySensor>
 			</Parallax>
         );
     
