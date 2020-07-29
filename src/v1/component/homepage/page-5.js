@@ -57,16 +57,24 @@ const Page5 = (props) => {
                           <li className="list-group-item">
                             <div className="row">
                               <div className="image-stack-container2 col-3">
+                                  <a href="https://id.linkedin.com/in/harisa-ginting-110993" target="_blank" rel="noopener noreferrer">
                                   <img alt="linkedin" src={process.env.PUBLIC_URL+'/linked.png'} className="social-image"/>
+                                  </a>
                               </div>
                               <div className="image-stack-container2 col-3">
+                                  <a href="https://www.instagram.com/harisaginting/" target="_blank" rel="noopener noreferrer">
                                   <img alt="instagram" src={process.env.PUBLIC_URL+'/ig.png'} className="social-image"/>
+                                  </a>
                               </div>
                               <div className="image-stack-container2 col-3">
+                                <a href="https://www.facebook.com/rzediac" target="_blank" rel="noopener noreferrer">
                                   <img alt="facebook" src={process.env.PUBLIC_URL+'/facebook.png'} className="social-image"/>
+                                </a>
                               </div>
                               <div className="image-stack-container2 col-3">
+                                  <a href="https://twitter.com/harisaginting" target="_blank" rel="noopener noreferrer">
                                   <img alt="twitter" src={process.env.PUBLIC_URL+'/twitter.png'} className="social-image"/>
+                                  </a>
                               </div>
                             </div>
                           </li>
