@@ -39,10 +39,10 @@ const Homepage = (props) => {
 		});
 
         return (
-			<Parallax id="container-parallax" ref={ref => setParallax(ref)} pages={8.5}>
+			<Parallax id="container-parallax" ref={ref => setParallax(ref)} pages={10}>
 			        <ParallaxLayer offset={3.51} factor={1.5} 	speed={1} className="backgroundSoreMalam" />
 			        <ParallaxLayer offset={4} 	 factor={4} 	speed={1}  className="backgroundSore" />
-			        <ParallaxLayer offset={6} 	 factor={4} speed={1}  className="backgroundSiang" />
+			        <ParallaxLayer offset={6} 	 factor={7} 	speed={1}  className="backgroundSiang" />
 
 			        <ParallaxLayer offset={0} speed={0} factor={5} style={{ backgroundImage: 'url('+process.env.PUBLIC_URL+'/stars.svg)',backgroundSize:'cover'}} />
 
@@ -90,7 +90,7 @@ const Homepage = (props) => {
 			        </VisibilitySensor>
 
 			        <VisibilitySensor partialVisibility={true}  offset={{top:100,bottom:-250}} containmentX={document.getElementById("container-parallax")} onChange={(isVisible)=> page3Visibility(isVisible)} >
-			        	<ParallaxLayer className="page3" factor={1.3} offset={1.7} speed={0.1} >
+			        	<ParallaxLayer className="page3" factor={1.6} offset={1.7} speed={0.1} >
 			          		<Page3 visibility={page3} style={{overflow:'scroll'}} />
 			        	</ParallaxLayer>
 			        </VisibilitySensor>
@@ -102,7 +102,7 @@ const Homepage = (props) => {
 			        </VisibilitySensor>
 
 			         <VisibilitySensor partialVisibility={true} containmentX={document.getElementById("container-parallax")} onChange={(isVisible)=> page5Visibility(isVisible)} >
-				        <ParallaxLayer offset={7} factor={2} className="page5" >
+				        <ParallaxLayer offset={7} factor={3} className="page5" >
 				          <Page5 visibility={page5}/>
 				        </ParallaxLayer>
 				     </VisibilitySensor>
