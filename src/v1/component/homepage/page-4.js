@@ -155,7 +155,7 @@ const Page4 = (props) => {
 
   return (
     <div className="experience-harisa" style={{ marginTop: !props.visibility ? -200 : -200}}>
-      <div className="text-center page4-header">Petualangan</div>
+      <div className="text-center page4-header">petualangan</div>
       <VerticalTimeline>
         {getTimelineElements()}
       </VerticalTimeline>

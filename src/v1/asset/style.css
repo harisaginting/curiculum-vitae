@@ -430,6 +430,14 @@ body{
     text-align: center;
   }
 
+  .page4{
+      margin-top: 150px;
+   }
+
+   .page5{
+      margin-top: 150px;
+   }
+
 @media screen and (min-width: 601px) {
 	.r-mobile{
 		display: none !important;
