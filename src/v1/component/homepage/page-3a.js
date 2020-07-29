@@ -1,11 +1,4 @@
-import { render } from 'react-dom'
-import React, { useState, useEffect } from 'react'
-import { useTransition, a } from 'react-spring'
-import shuffle from 'lodash/shuffle'
-import useMeasure from '../../helper/useMeasure'
-import useMedia from '../../helper/useMedia'
-import data from '../../helper/data'
-import data2 from '../../helper/data2'
+import React from 'react'
 import StarIcon from '@material-ui/icons/Star';
 import StarHalfIcon from '@material-ui/icons/StarHalf';
 import StarBorderIcon from '@material-ui/icons/StarBorder';
@@ -13,11 +6,11 @@ import StarBorderIcon from '@material-ui/icons/StarBorder';
 function Page3(props) {
   return (
     <div className="container-list-tech-stack">
-      <div className="tech-stack-header text-center">Status</div>
+      <div className="tech-stack-header text-center">status</div>
       <div className="list-tech-stack" >
       	<div className="pl-2 pr-2 w-100">
       		<div className="row">
-      			<div className="stack-title pl-4"><span>skills</span></div>
+      			<div className="stack-title pl-4"><span className="stack-title-header">keahlian</span></div>
       		</div>
       		<div className="row m-0 container-list-stack">
       			<div className="col-md-6">
@@ -25,7 +18,7 @@ function Page3(props) {
 					  <li className="list-group-item">
 					  	<div className="row">
 					  		<div className="image-stack-container">
-					  				<img src={`${process.env.PUBLIC_URL}/`+'php.png'} className="avatar-stack"/>
+					  				<img alt="php" src={process.env.PUBLIC_URL+'/php.png'} className="avatar-stack"/>
 					  		</div>
 					  		<div className="stack-container">
 					  			<div className="stack-title">PHP</div>
@@ -47,7 +40,7 @@ function Page3(props) {
 					  <li className="list-group-item">
 					  	<div className="row">
 					  		<div className="image-stack-container">
-					  				<img src={`${process.env.PUBLIC_URL}/`+'golang.png'} className="avatar-stack"/>
+					  				<img alt="go" src={process.env.PUBLIC_URL+'/go.png'} className="avatar-stack"/>
 					  		</div>
 					  		<div className="stack-container">
 					  			<div className="stack-title">GoLang</div>
@@ -69,7 +62,7 @@ function Page3(props) {
 					  <li className="list-group-item">
 					  	<div className="row">
 					  		<div className="image-stack-container">
-					  				<img src={`${process.env.PUBLIC_URL}/`+'javascript.png'} className="avatar-stack" style={{borderRadius:'50%'}} />
+					  				<img alt="js" src={process.env.PUBLIC_URL+'/js.png'} className="avatar-stack" style={{borderRadius:'50%'}} />
 					  		</div>
 					  		<div className="stack-container">
 					  			<div className="stack-title">Javascript</div>
@@ -91,7 +84,7 @@ function Page3(props) {
 					  <li className="list-group-item">
 					  	<div className="row">
 					  		<div className="image-stack-container">
-					  				<img src={`${process.env.PUBLIC_URL}/`+'mysql.png'} className="avatar-stack" style={{borderRadius:'50%'}} />
+					  				<img alt="mysql" src={process.env.PUBLIC_URL+'/mysql.png'} className="avatar-stack" style={{borderRadius:'50%'}} />
 					  		</div>
 					  		<div className="stack-container">
 					  			<div className="stack-title">mySql</div>
@@ -113,7 +106,7 @@ function Page3(props) {
 					  <li className="list-group-item">
 					  	<div className="row">
 					  		<div className="image-stack-container">
-					  				<img src={`${process.env.PUBLIC_URL}/`+'oracle.jpg'} className="avatar-stack" style={{borderRadius:'50%'}} />
+					  				<img alt="oracle" src={process.env.PUBLIC_URL+'/oracle.png'} className="avatar-stack" style={{borderRadius:'50%'}} />
 					  		</div>
 					  		<div className="stack-container">
 					  			<div className="stack-title">Oracle</div>
@@ -139,7 +132,7 @@ function Page3(props) {
 					  <li className="list-group-item">
 					  	<div className="row">
 					  		<div className="image-stack-container">
-					  				<img src={`${process.env.PUBLIC_URL}/`+'codeigniter.png'} className="avatar-stack"/>
+					  				<img alt="codeigniter"  src={process.env.PUBLIC_URL+'/ci.png'} className="avatar-stack"/>
 					  		</div>
 					  		<div className="stack-container">
 					  			<div className="stack-title">Codeigniter</div>
@@ -161,7 +154,7 @@ function Page3(props) {
 					  <li className="list-group-item">
 					  	<div className="row">
 					  		<div className="image-stack-container">
-					  				<img src={`${process.env.PUBLIC_URL}/`+'laravel.png'} className="avatar-stack"/>
+					  				<img alt="laravel" src={process.env.PUBLIC_URL+'/laravel.png'} className="avatar-stack"/>
 					  		</div>
 					  		<div className="stack-container">
 					  			<div className="stack-title">Laravel</div>
@@ -183,7 +176,7 @@ function Page3(props) {
 					  <li className="list-group-item">
 					  	<div className="row">
 					  		<div className="image-stack-container">
-					  				<img src={`${process.env.PUBLIC_URL}/`+'php.png'} className="avatar-stack" style={{borderRadius:'50%'}} />
+					  				<img alt="gin" src={process.env.PUBLIC_URL+'/gin.png'} className="avatar-stack" style={{borderRadius:'50%'}} />
 					  		</div>
 					  		<div className="stack-container">
 					  			<div className="stack-title">GIN</div>
@@ -205,7 +198,7 @@ function Page3(props) {
 					  <li className="list-group-item">
 					  	<div className="row">
 					  		<div className="image-stack-container">
-					  				<img src={`${process.env.PUBLIC_URL}/`+'reactjs.png'} className="avatar-stack" style={{borderRadius:'50%'}} />
+					  				<img alt="reactjs" src={process.env.PUBLIC_URL+'/reactjs.png'} className="avatar-stack" style={{borderRadius:'50%'}} />
 					  		</div>
 					  		<div className="stack-container">
 					  			<div className="stack-title">ReactJs</div>
@@ -224,13 +217,14 @@ function Page3(props) {
 					  		</div>
 					  	</div>
 					  </li>
+
 					  <li className="list-group-item">
 					  	<div className="row">
 					  		<div className="image-stack-container">
-					  				<img src={`${process.env.PUBLIC_URL}/`+'php.png'} className="avatar-stack" style={{borderRadius:'50%'}} />
+					  				<img alt="magento" src={process.env.PUBLIC_URL+'/magento.png'} className="avatar-stack" style={{borderRadius:'50%'}} />
 					  		</div>
 					  		<div className="stack-container">
-					  			<div className="stack-title">Jquery</div>
+					  			<div className="stack-title">Magento</div>
 					  			<div className="stack-level">
 					  				<StarIcon/>
 					  				<StarIcon/>
@@ -238,9 +232,9 @@ function Page3(props) {
 					  				<StarIcon/>
 					  				<StarIcon/>
 					  				<StarIcon/>
-					  				<StarIcon/>
-					  				<StarIcon/>
 					  				<StarHalfIcon/>
+					  				<StarBorderIcon/>
+					  				<StarBorderIcon/>
 					  				<StarBorderIcon/>
 					  			</div>
 					  		</div>
@@ -251,16 +245,15 @@ function Page3(props) {
       		</div>
 
       		<div className="row mt-3">
-      			<div className="stack-title pl-4"><span>weapon</span></div>
+      			<div className="stack-title pl-4"><span className="stack-title-header" >perlengkapan</span></div>
       		</div>
-      		<div className="row m-0 container-list-stack d-sm-noned-none d-sm-block">
-      		<div className="row">
-      			<div className="col-md-3">
+      		<div className="row m-0 container-list-stack">
+      			<div className="col-md-4">
       				<ul className="list-group">
 					  <li className="list-group-item">
 					  	<div className="row">
 					  		<div className="image-stack-container">
-					  				<img src={`${process.env.PUBLIC_URL}/`+'php.png'} className="avatar-stack"/>
+					  				<img alt="git" src={process.env.PUBLIC_URL+'/git.png'} className="avatar-stack"/>
 					  		</div>
 					  		<div className="stack-container">
 					  			<div className="stack-title mt-2 pt-3">Git</div>
@@ -269,12 +262,12 @@ function Page3(props) {
 					  </li>
 					</ul>
       			</div>
-      			<div className="col-md-3">
+      			<div className="col-md-4">
       				<ul className="list-group">
 					  <li className="list-group-item">
 					  	<div className="row">
 					  		<div className="image-stack-container">
-					  				<img src={`${process.env.PUBLIC_URL}/`+'php.png'} className="avatar-stack"/>
+					  				<img alt="ubuntu" src={process.env.PUBLIC_URL+'/ubuntu.png'} className="avatar-stack"/>
 					  		</div>
 					  		<div className="stack-container">
 					  			<div className="stack-title mt-2 pt-3">Ubuntu</div>
@@ -283,12 +276,12 @@ function Page3(props) {
 					  </li>
 					</ul>
       			</div>
-      			<div className="col-md-3">
+      			<div className="col-md-4">
       				<ul className="list-group">
 					  <li className="list-group-item">
 					  	<div className="row">
 					  		<div className="image-stack-container">
-					  				<img src={`${process.env.PUBLIC_URL}/`+'php.png'} className="avatar-stack"/>
+					  				<img alt="sublime" src={process.env.PUBLIC_URL+'/sublime.png'} className="avatar-stack"/>
 					  		</div>
 					  		<div className="stack-container">
 					  			<div className="stack-title mt-2 pt-3">Sublime</div>
@@ -297,72 +290,10 @@ function Page3(props) {
 					  </li>
 					</ul>
       			</div>
-      			<div className="col-md-3">
-      				<ul className="list-group">
-					  <li className="list-group-item">
-					  	<div className="row">
-					  		<div className="image-stack-container">
-					  				<img src={`${process.env.PUBLIC_URL}/`+'php.png'} className="avatar-stack"/>
-					  		</div>
-					  		<div className="stack-container">
-					  			<div className="stack-title mt-2 pt-3">Photoshop</div>
-					  		</div>
-					  	</div>
-					  </li>
-					</ul>
-      			</div>
-      			</div>
-      		</div>
-
-      		<div className="row m-0 container-list-stack d-sm-none">
-      			<div className="col-md-6">
-      				<ul className="list-group">
-					  <li className="list-group-item">
-					  	<div className="row">
-					  		<div className="image-stack-container">
-					  				<img src={`${process.env.PUBLIC_URL}/`+'php.png'} className="avatar-stack"/>
-					  		</div>
-					  	</div>
-					  </li>
-					</ul>
-      			</div>
-      			<div className="col-md-6">
-      				<ul className="list-group">
-					  <li className="list-group-item">
-					  	<div className="row">
-					  		<div className="image-stack-container">
-					  				<img src={`${process.env.PUBLIC_URL}/`+'php.png'} className="avatar-stack"/>
-					  		</div>
-					  	</div>
-					  </li>
-					</ul>
-      			</div>
-      			<div className="col-md-6">
-      				<ul className="list-group">
-					  <li className="list-group-item">
-					  	<div className="row">
-					  		<div className="image-stack-container">
-					  				<img src={`${process.env.PUBLIC_URL}/`+'php.png'} className="avatar-stack"/>
-					  		</div>
-					  	</div>
-					  </li>
-					</ul>
-      			</div>
-      			<div className="col-md-6">
-      				<ul className="list-group">
-					  <li className="list-group-item">
-					  	<div className="row">
-					  		<div className="image-stack-container">
-					  				<img src={`${process.env.PUBLIC_URL}/`+'php.png'} className="avatar-stack"/>
-					  		</div>
-					  	</div>
-					  </li>
-					</ul>
-      			</div>
       		</div>
 
       		<div className="row mt-3">
-      			<div className="stack-title pl-4"><span>personality</span></div>
+      			<div className="stack-title pl-4"><span className="stack-title-header">personal</span></div>
       		</div>
       		<div className="row m-0 container-list-stack">
       			<div className="col-md-4">
@@ -370,7 +301,7 @@ function Page3(props) {
 					  <li className="list-group-item">
 					  	<div className="row">
 					  		<div className="image-stack-container">
-					  				<img src={`${process.env.PUBLIC_URL}/`+'php.png'} className="avatar-stack"/>
+					  				<img alt="friendly" src={process.env.PUBLIC_URL+'/friendly.png'} className="avatar-stack"/>
 					  		</div>
 					  		<div className="stack-container">
 					  			<div className="stack-title mt-2 pt-3">Friendly</div>
@@ -384,7 +315,7 @@ function Page3(props) {
 					  <li className="list-group-item">
 					  	<div className="row">
 					  		<div className="image-stack-container">
-					  				<img src={`${process.env.PUBLIC_URL}/`+'php.png'} className="avatar-stack"/>
+					  				<img alt="team" src={process.env.PUBLIC_URL+'/team.png'} className="avatar-stack"/>
 					  		</div>
 					  		<div className="stack-container">
 					  			<div className="stack-title mt-2 pt-3">Team Player</div>
@@ -398,7 +329,7 @@ function Page3(props) {
 					  <li className="list-group-item">
 					  	<div className="row">
 					  		<div className="image-stack-container">
-					  				<img src={`${process.env.PUBLIC_URL}/`+'php.png'} className="avatar-stack"/>
+					  				<img alt="positivibes" src={process.env.PUBLIC_URL+'/positivibes.png'} className="avatar-stack"/>
 					  		</div>
 					  		<div className="stack-container">
 					  			<div className="stack-title mt-2 pt-3">Positive Vibes</div>

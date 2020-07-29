@@ -1,5 +1,4 @@
-import React, { useRef, useState, useEffect, useCallback } from 'react'
-import { render } from 'react-dom'
+import React, { useState, useEffect} from 'react'
 import { useSpring, animated as a } from 'react-spring'
 
 const Page2 = (props) => {
@@ -16,15 +15,15 @@ const Page2 = (props) => {
   }, [props]);
 
   return (
-    <div className="page2" style={{ marginTop: !flipped ? 0 : -200}}>
+    <div className="page2" style={{ marginTop: !flipped ? 0 : 0}}>
       <a.div className="back card card-bio" style={{ opacity: opacity.interpolate(o => 1 - o), transform}}>
         <div className="card-bio-body">
           <div>
             <p>
-              <span  className="abu2">//perkenalkan</span>&nbsp;
+              <span  className="abu2">&#47;&#47;perkenalkan</span>&nbsp;
             </p>
             <p>
-              <span  className="putih">saya adalah seseorang yang sudah {new Date().getFullYear() - 2017} tahun menjalani profesi sebagai </span>
+              <span  className="putih">saya adalah seseorang yang sudah {new Date().getFullYear() - 2016} tahun menjalani profesi sebagai </span>
               <span  className="biru">programmer;</span>
             <br/>
             <br/>

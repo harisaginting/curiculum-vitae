@@ -1,11 +1,7 @@
-import React, { useRef, useState, useEffect, useCallback } from 'react'
-import { render } from 'react-dom'
-import { useSpring, animated as a } from 'react-spring'
+import React, { useState, useEffect } from 'react'
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
-// import AddIcon from '@material-ui/icons/Add';
 import SchoolIcon from '@material-ui/icons/School';
 import WorkIcon from '@material-ui/icons/Work';
-import Fab from '@material-ui/core/Fab';
 import 'react-vertical-timeline-component/style.min.css';
 
 
@@ -89,8 +85,8 @@ const dataExamples = [
     props: {
       date: 'Agustus 2013 - Oktober 2016',
       className: 'vertical-timeline-element--education',
-      contentArrowStyle: { borderRight: '7px solid  #7cbb15' },
-      iconStyle: { background: '#7cbb15', color: '#fff' },
+      contentArrowStyle: { borderRight: '7px solid  #ff9900' },
+      iconStyle: { background: '#ff9900', color: '#fff' },
       icon: <SchoolIcon />,
     },
     subtitle: 'Universitas Gunadarma',
@@ -124,8 +120,8 @@ const dataExamples = [
     props: {
       date: 'Juni 2008 - Juni 2011',
       className: 'vertical-timeline-element--education',
-      contentArrowStyle: { borderRight: '7px solid  #7cbb15' },
-      iconStyle: { background: '#7cbb15', color: '#fff' },
+      contentArrowStyle: { borderRight: '7px solid  #ff9900' },
+      iconStyle: { background: '#ff9900', color: '#fff' },
       icon: <SchoolIcon />,
     },
     subtitle: 'SMKN 2 Cikarang Barat',
@@ -144,8 +140,8 @@ const Page4 = (props) => {
   }, []);
 
   const getTimelineElements = () =>
-    elements.map(element => (
-      <VerticalTimelineElement {...element.props}>
+    elements.map( (element, i) => (
+      <VerticalTimelineElement key={i} {...element.props}>
         <h3 className="vertical-timeline-element-title">{element.title}</h3>
         <h4 className="vertical-timeline-element-subtitle">
           {element.subtitle}
@@ -159,7 +155,7 @@ const Page4 = (props) => {
 
   return (
     <div className="experience-harisa" style={{ marginTop: !props.visibility ? -200 : -200}}>
-      <div className="text-center page4-header">Karir & Pendidikan</div>
+      <div className="text-center page4-header">Petualangan</div>
       <VerticalTimeline>
         {getTimelineElements()}
       </VerticalTimeline>

@@ -1,17 +1,21 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:200,700|Source+Sans+Pro:300,600,300italic,600italic");
+
 :root {
   --hijau: #7cbb15;
-  --biru: #1373C7;
+  --biru: #1d59d5;
   --kuning: #FEC907;
   --merah: #ED1C22;
   --putih: #FEFEFE;
   --abu2: #909090;
+  --putih-tua: #ddd;
   --emas: #ff9900;
+  --hitam: #000;
 }
 
 body{
 	margin : 0px !important;
 	background-color: #111;
-	font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto,
+	font-family: 'Montserrat',-apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto,
     segoe ui, arial, sans-serif;
 }
 
@@ -175,7 +179,7 @@ body{
     margin: auto;
     cursor: pointer;
     will-change: transform, opacity;
-    background: #333;
+    background: var(--biru);
     width: 80%;
     height: 95%;
     border-radius: 20px;
@@ -185,8 +189,7 @@ body{
 .list-tech-stack {
   position: absolute;
   top: 55px;
-  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto,
-    segoe ui, arial, sans-serif;
+  font-family: 'Roboto';
   width: 100%;
   height: 100%;
 }
@@ -213,12 +216,15 @@ body{
 
 .tech-stack-header{
 	position: absolute;
-    top: 0%;
-    height: 50px;
-    width: 100%;
-    background: #777777;
-    border-top-left-radius: 18px;
+  top: 0%;
+  height: 50px;
+  width: 100%;
+  background: var(--putih-tua);
+  border-top-left-radius: 18px;
 	border-top-right-radius: 18px;
+  font-size: 1.8em;
+  font-family: Raleway, Helvetica, sans-serif;
+  font-weight: 800;
 }
 
 .ahli{
@@ -281,7 +287,7 @@ body{
 }
 
 .vertical-timeline-element--education > .vertical-timeline-element-content{
-	background-color: var(--hijau);
+	background-color: var(--emas);
 	color: var(--putih);
 }
 
@@ -340,32 +346,89 @@ body{
     padding: 0px;
 }
 
+.social-image{
+  height: 100%;
+    /*width: 100%;*/
+    padding: 0px;
+}
+
 .image-stack-container{
 	height: 62px;
     width: 62px;
     border-radius: 50%;
-    border: 2px solid var(--emas);
+    border: 2px solid var(--putih);
+}
+
+.contact-title{
+  text-transform: none !important;
+  font-weight: 600;
+  font-size: 1.8em;
+  color : var(--hitam);
 }
 
 .stack-title{
 	text-transform: none !important;
 	padding:10px;
-    font-weight: 600;
-    font-size: 2.5em;
-    color : var(--kuning);
+  font-weight: 600;
+  font-size: 1.8em;
+  color : var(--putih);
+}
+
+.stack-title-header{
+  text-transform: none !important;
+  padding:10px;
+  font-weight: 600;
+  font-size: 1.3em;
+  font-weight: 800;
+  font-family: 'Roboto';
+  color : var(--putih);
+  letter-spacing: 0.07em;
+}
+
+.container-stack-title{
+  border-bottom: 1px solid var(--putih);
 }
 
 .stack-level{
 	padding: 0px 10px;
     font-weight: 600;
     font-size: 1.5em;
-    color : var(--emas);
+    color : var(--putih);
 }
 
 .container-list-stack{
 	border-radius: 20px !important;
-	/*border : 2px solid var(--abu2);*/
 }
+
+.card-body-contact{
+  background: var(--biru);
+  color: var(--putih);
+}
+
+.card-body-contact a{
+  background: var(--biru);
+  color: var(--putih-tua);
+}
+
+.title-contact{
+    font-size: 1.2em;
+    font-weight: 800;
+    font-family: 'Roboto';
+}
+
+.title-contact2{
+    font-size: 1.5em;
+    font-weight: 800;
+    color: var(--biru);
+    font-family: 'Roboto';
+}   
+
+.image-stack-container2{
+    height: 32px;
+    width: 32px;  
+    border : 0px;
+    text-align: center;
+  }
 
 @media screen and (min-width: 601px) {
 	.r-mobile{
@@ -394,7 +457,12 @@ body{
 
    .page3{
    		height: 100%;
-   		margin-top: 550px;
+   		margin-top: 300px;
+   }
+
+   .page5{
+      height: 100%;
+      margin-top: 250px;
    }
 
    .image-stack-container{
@@ -421,9 +489,7 @@ body{
 	}
 
    .page4{
-   		margin-top: 450px;
+   		margin-top: 200px;
    }
-
-
 
 }
