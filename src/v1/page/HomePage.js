@@ -39,10 +39,10 @@ const Homepage = (props) => {
 		});
 
         return (
-			<Parallax id="container-parallax" ref={ref => setParallax(ref)} pages={10}>
+			<Parallax id="container-parallax" ref={ref => setParallax(ref)} pages={14}>
 			        <ParallaxLayer offset={3.51} factor={1.5} 	speed={1} className="backgroundSoreMalam" />
 			        <ParallaxLayer offset={4} 	 factor={4} 	speed={1}  className="backgroundSore" />
-			        <ParallaxLayer offset={6} 	 factor={7} 	speed={1}  className="backgroundSiang" />
+			        <ParallaxLayer offset={6} 	 factor={15} 	speed={1}  className="backgroundSiang" />
 
 			        <ParallaxLayer offset={0} speed={0} factor={5} style={{ backgroundImage: 'url('+process.env.PUBLIC_URL+'/stars.svg)',backgroundSize:'cover'}} />
 

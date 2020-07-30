@@ -501,3 +501,26 @@ body{
    }
 
 }
+
+/*responsive conf*/
+@media screen and (max-width: 360px) {
+    .page2{
+      margin-top: 0px !important;
+      height: 155%;
+    }
+
+   .page3{
+      height: 18.5% !important; 
+      margin-top: 550px;
+   }
+
+   .page4{
+      margin-top: 780px;
+   }
+
+   .page5{
+      height: 100%;
+      margin-top: 2600px;
+   }   
+
+}
